@@ -52,6 +52,13 @@ body{
     position: relative;
     left: 25px;
     padding: 0;
+    padding-bottom: 2px;
+
+    color:hsl(0, 0%, 100%);
+    text-shadow: 1px 1px 1px black;
+    width: 150px;
+    border-bottom: 2px black solid;
+
 }
 
 .langues table th, .langues table td{
@@ -63,6 +70,8 @@ body{
 .langues table th{
     text-decoration: underline;
 }
+
+
 
 
 
