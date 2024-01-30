@@ -219,3 +219,85 @@ body{
     cursor: pointer;
     box-shadow: 2px 2px 1px hsl(240, 54%, 73%);
 }
+
+
+
+
+/*------------------------------Full Screen-------------------------------------------------*/
+
+@media screen and (min-width:29cm) {
+    body{
+        width: 100%;
+    }
+
+    /*
+    .left-section{
+        width: 20%;
+        min-width: 8cm;
+
+    }
+    */
+
+    .right-section{
+        margin-left: 21%;
+    }
+    .education .content{
+        display: flex;
+        flex-direction: row-reverse;
+        border-left: none;
+        padding: 10px 0px 0px;
+    }
+    .education .arrow1{ 
+        /*border-left: 50px solid transparent;*/
+        border-right: 30px solid transparent;
+        border-bottom: 4px dashed hsl(160, 80%, 20%);
+
+        margin: 0 2%;
+    }
+    .education .arrow2{    
+        /*border-left: 50px solid transparent;*/
+        border-right: 30px solid transparent;
+        border-top: 4px dashed hsl(160, 80%, 20%);
+
+        margin: 0 2%;
+    }
+    
+    .right-section .summary p{
+        font-size: large;
+    }
+
+    .left-section{
+        width: 100%;
+        height: 23%;
+        display: flex;
+    }
+
+    
+    .left-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    
+    .left-section .skills ul{
+        columns: 2;
+        grid-auto-columns: auto;
+        gap: 50px;
+        width: 400px;
+    }
+    
+    .langues , .soft-skills  , .skills{
+        margin-right: 4%;
+    }
+
+    .right-section{
+        margin-left: 5%;
+    }
+    .right-section .name h2{
+        margin: 20% 0px 5px 0;
+    }
+
+    
+}
