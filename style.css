@@ -45,6 +45,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-style: bold;
 }
+.left-section .info a{
+    color: inherit;
+    text-decoration: none;
+}
 
 /*les langues*/
 .title-left{
@@ -67,9 +71,7 @@ body{
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
 }
-.langues table th{
-    text-decoration: underline;
-}
+
 
 /*soft skills*/
 
@@ -81,40 +83,54 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*hover
-
-.left-section .soft-skills:hover{
-    border: 2px black solid;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px black;
-    cursor: pointer;
+/*competence*/
+.skills ul{
+    column-count: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
-.left-section .langues:hover{
-    border: 2px black solid;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px black;
-    cursor: pointer;
-}
-.left-section .info:hover{
-    cursor: pointer;
-    border: 2px black solid;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px black;
+.skills li{
+    padding-bottom: 5px;
 }
 
-*/
+
+/*--------------------------- hover left--------------------------------*/
+
+.skills li:hover{
+    font-weight: bold;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.left-section .info tr:hover{
+    text-decoration:underline;
+}
+
+.left-section .soft-skills li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+.left-section .langues table th:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.left-section .langues table th:hover + td{
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-weight: bold;
+}
 
 
 
 
 
-
-
-
-
+/*------------------------- right section --------------------------------------*/
 
 .right-section{
     margin-left: 8.5cm;
+    padding-right: 15px ;
 }
 
 .right-section .name h2{
@@ -134,10 +150,7 @@ body{
     color: hsl(0, 50%, 40%);;
     
 }
-.right-section .summary:hover {
-    font-weight: bold;
 
-}
 .right-section .title-right{
     font-family: Arial, Helvetica, sans-serif;
     color: hsl(160, 81%, 30%);
@@ -169,22 +182,40 @@ body{
     color:rgb(0, 0, 255);
     
 } 
+
+.framework ul{
+    columns: 3;
+    list-style: none;
+    padding: 0;
+    
+}
+.framework li{
+    border: 2px black solid;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+/*-------------------------- hover right -------------------------*/
+
+.right-section .summary:active p{
+    border: 2px hsl(0, 50%, 40%) dotted;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
 .education .content .box:hover{
     box-shadow: 5px 5px 5px gray;
     cursor: pointer;
 }
-
-/*competence*/
-.skills ul{
-    column-count: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-}
-.skills li{
-    padding-bottom: 5px;
-}
-.skills li:hover{
-    font-weight: bold;
-    text-decoration:underline;
+.framework li:hover{
+    background:lightgreen;
     cursor: pointer;
+    box-shadow: 2px 2px 1px hsl(240, 54%, 73%);
 }
